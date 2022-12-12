@@ -371,7 +371,8 @@ func (c *GenericClient) GetImageID(d *Driver) (string, error) {
 }
 
 func (c *GenericClient) GetPublicKey(keyPairName string) ([]byte, error) {
-	kp, err := keypairs.Get(c.Compute, keyPairName).Extract()
+	getOpts := keypairs.GetOpts{UserID: "user-id"}
+	kp, err := keypairs.Get(c.Compute, keyPairName, getOpts).Extract()
 	if err != nil {
 		return nil, err
 	}
@@ -390,7 +391,8 @@ func (c *GenericClient) CreateKeyPair(d *Driver, name string, publicKey string) 
 }
 
 func (c *GenericClient) DeleteKeyPair(d *Driver, name string) error {
-	if result := keypairs.Delete(c.Compute, name); result.Err != nil {
+	deleteOpts := keypairs.DeleteOpts{UserID: "user-id"}
+	if result := keypairs.Delete(c.Compute, name, deleteOpts); result.Err != nil {
 		return result.Err
 	}
 	return nil

@@ -18,8 +18,8 @@ require (
 	github.com/digitalocean/godo v0.0.0-20170317202744-d59ed2fe842b
 	github.com/docker/docker v0.7.3-0.20190327010347-be7ac8be2ae0
 	github.com/exoscale/egoscale v0.12.3
-	github.com/gophercloud/gophercloud v0.7.0
-	github.com/gophercloud/utils v0.0.0-20191129022341-463e26ffa30d
+	github.com/gophercloud/gophercloud v1.1.1
+	github.com/gophercloud/utils v0.0.0-20221207145018-e8fba78967ca
 	github.com/rackspace/gophercloud v0.0.0-20150408191457-ce0f487f6747
 	github.com/rancher/wrangler v0.8.1-0.20210506052526-673b7f8692d9
 	github.com/samalba/dockerclient v0.0.0-20151231000007-f661dd4754aa
@@ -28,10 +28,10 @@ require (
 	github.com/urfave/cli v1.20.0
 	github.com/vmware/govcloudair v0.0.2
 	github.com/vmware/govmomi v0.23.2-0.20201015235820-81318771d0e0
-	golang.org/x/crypto v0.0.0-20220411220226-7b82a4e95df4
-	golang.org/x/net v0.0.0-20220909164309-bea034e7d591
+	golang.org/x/crypto v0.0.0-20220829220503-c86fa9a7ed90
+	golang.org/x/net v0.3.0
 	golang.org/x/oauth2 v0.0.0-20200107190931-bf48bf16ab8d
-	golang.org/x/sys v0.0.0-20220728004956-3c1f35247d10
+	golang.org/x/sys v0.3.0
 	google.golang.org/api v0.20.0
 	gopkg.in/yaml.v2 v2.4.0
 	k8s.io/api v0.21.0
@@ -87,9 +87,11 @@ require (
 	github.com/stretchr/objx v0.2.0 // indirect
 	github.com/tent/http-link-go v0.0.0-20130702225549-ac974c61c2f9 // indirect
 	go.opencensus.io v0.22.3 // indirect
-	golang.org/x/term v0.0.0-20210927222741-03fcf44c2211 // indirect
-	golang.org/x/text v0.3.7 // indirect
+	golang.org/x/lint v0.0.0-20210508222113-6edffad5e616 // indirect
+	golang.org/x/term v0.3.0 // indirect
+	golang.org/x/text v0.5.0 // indirect
 	golang.org/x/time v0.0.0-20210220033141-f8bda1e9f3ba // indirect
+	golang.org/x/tools v0.4.0 // indirect
 	google.golang.org/appengine v1.6.5 // indirect
 	google.golang.org/genproto v0.0.0-20200526211855-cb27e3aa2013 // indirect
 	google.golang.org/grpc v1.27.1 // indirect
