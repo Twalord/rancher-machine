@@ -101,6 +101,7 @@ func (c *GenericClient) CreateInstance(d *Driver) (string, error) {
 	var err error
 
 	if d.BootFromVolume {
+		log.Info("BootFromVolume was selected, preparing...")
 		blockDevices := []bootfromvolume.BlockDevice{
 			bootfromvolume.BlockDevice{
 				BootIndex:           0,
